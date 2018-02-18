@@ -1,6 +1,7 @@
+import java.util.List;
 
 public class Patient implements Name, Address{
-	private static int patientCounter;
+	protected static int patientCounter;
 	private int patientID;
 	private String firstName;
 	private String initial;
@@ -14,13 +15,21 @@ public class Patient implements Name, Address{
 	private String dob;
 	private int primaryDoctorID;
 	private char gender;
+	private boolean hasInsurance;
+	private int householderID;
+	private List<String> medicalRecord;
 	
 	public Patient(String fName, String initial, String lName, int stNum,
 			String stName, int unitNum, String city, 
-			Province province, String dob, int doctor, char gender){
+			Province province, String dob, int doctor, 
+			boolean hasIns,char gender, int householderID){
 		patientCounter++;
 	}
 	
-	//implements all the setters and getters methods here
+	public int findPatientID(String fName, String lName, String dob){
+		return -1;
+	}
+	
+	//other setters and getters methods
 
 }

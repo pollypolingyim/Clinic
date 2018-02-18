@@ -1,23 +1,20 @@
 
-public class Doctor implements Name {
-	private static idCounter;
-	private Name fullName;
+public class Doctor {
+	private static int idCounter;
+	private String fullName;
 	private Specialty specialty;
 	private int appointmentID;
 	private int doctorID;
 	
 	
-	public Doctor (Name fullName, Specialty specialty){
-		
+	public Doctor (String fullName, Specialty specialty){
+		this.fullName = fullName;
+		this.specialty = specialty;
+		idCounter++;
+		doctorID = idCounter;
 	}
 	
-	public void setFirstName(String fName){
-	}
-	
-	public void setInitial(String initial){
-	}
-	
-	public void setLastName(String lName){
+	public void setFullName(String fullName){
 	}
 	
 	public void setSpecialty (Specialty specialty){
@@ -32,23 +29,18 @@ public class Doctor implements Name {
 		return doctorID;
 	}
 	
-	public String getFirstName (){
-		return null;
+	public String getFullName (){
+		return fullName;
 	}
 	
-	public String getInitial(){
-		return null;
-	}
-	
-	public String getLastName(){
-		return null;
-	}
-	
-	public Specialty getSpecialty(){
-		return null;
-	}
+
 	
 	public int getAppointmentID(){
+		return 0;
+	}
+	
+	//return the doctor id of the doctor by his name
+	public int findDoctor(String fullName){
 		return 0;
 	}
 
