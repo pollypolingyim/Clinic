@@ -1,4 +1,4 @@
 
 public enum CoverageExtent {
-	medical, prescriptions, paramedical, vision, dental;
+	Medical, Prescriptions, Paramedical, Vision, Dental;
 }
